@@ -12,6 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.stringPreferencesKey
 import com.jamal.composeprefs3.ui.GroupHeader
 import com.jamal.composeprefs3.ui.PrefsScreen
 import com.jamal.composeprefs3.ui.prefs.*
@@ -36,6 +38,8 @@ fun SettingsScreen() {
                     TextPref(
                         title = "Just some text",
                         summary = "But enabled this time",
+                        dependencyKey = booleanPreferencesKey("cb2"),
+                        darkenOnDisable = true,
                         enabled = true
                     )
                 }
