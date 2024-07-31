@@ -67,6 +67,15 @@ fun SettingsScreen() {
                     CheckBoxPref(
                         key = "cb3",
                         title = "Simple checkbox",
+                        summary = "But it has some summary on off text",
+                        summaryOn = "But it has some summary on text",
+                        summaryOff = "But it has some summary off text",
+                    )
+                }
+                prefsItem {
+                    CheckBoxPref(
+                        key = "cb4",
+                        title = "Simple checkbox",
                         summary = "But it's disabled",
                         enabled = false,
                         darkenOnDisable = true
@@ -74,7 +83,7 @@ fun SettingsScreen() {
                 }
                 prefsItem {
                     CheckBoxPref(
-                        key = "cb4",
+                        key = "cb5",
                         title = "Simple checkbox",
                         summary = "But with a leading icon",
                         leadingIcon = { Icon(Icons.Filled.Person, "Person") })
@@ -94,13 +103,22 @@ fun SettingsScreen() {
                     SwitchPref(
                         key = "sw3",
                         title = "Simple switch",
+                        summary = "But it has some summary on off text",
+                        summaryOn = "But it has some summary on text",
+                        summaryOff = "But it has some summary off text",
+                    )
+                }
+                prefsItem {
+                    SwitchPref(
+                        key = "sw4",
+                        title = "Simple switch",
                         summary = "But it's disabled",
                         enabled = false
                     )
                 }
                 prefsItem {
                     SwitchPref(
-                        key = "sw4",
+                        key = "sw5",
                         title = "Simple switch",
                         summary = "But with a leading icon",
                         leadingIcon = { Icon(Icons.Filled.Home, "Home") })
